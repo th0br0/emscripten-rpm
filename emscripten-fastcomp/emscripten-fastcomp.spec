@@ -9,9 +9,9 @@ License: NCSA
 URL: https://github.com/kripken/emscripten-fastcomp
 
 #Source0: https://github.com/kripken/%{name}/archive/%{version}.tar.gz
-Source0: %{name}-%{version}/%{name}-%{version}.tar.gz
+Source0: src/%{name}-%{version}.tar.gz
 #Source1: https://github.com/kripken/%{name}-clang/archive/%{version}.tar.gz
-Source1: %{name}-%{version}/%{name}-clang-%{version}.tar.gz
+Source1: src/%{name}-clang-%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  zlib-devel
@@ -34,9 +34,9 @@ Requires: %{name}%{?_isa} = %{version}-%{release}
 Development header files for emscripten-fastcomp clang+llvm.
 
 %prep
-%setup -q -n %{name}-%{version}/%{name}-clang-%{version} -D -b 1
-%setup -q -n %{name}-%{version}/%{name}-%{version} -b 0
-mv ../%{name}-%{version}/%{name}-clang-%{version} tools/clang
+%setup -q -n %{name}-clang-%{version} -D -b 1
+%setup -q -n %{name}-%{version} -b 0
+mv ../%{name}-clang-%{version} tools/clang
 
 %build
 mkdir -p _build
