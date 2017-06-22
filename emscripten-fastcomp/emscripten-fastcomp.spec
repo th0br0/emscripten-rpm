@@ -1,7 +1,7 @@
 # We need to install it all in its own prefix.
 %define _prefix /usr/lib/emscripten
 Name: emscripten-fastcomp
-Version: 1.37.15
+Version: 1.37.16
 Release: 1%{?dist}
 Summary: The clang+llvm backend for Emscripten
 
@@ -96,6 +96,9 @@ rm -vf %{buildroot}%{_datadir}/clang/clang-format-diff.py*
 
 
 %changelog
+* Thu Jun 22 2017 Andreas C. Osowski <andreas@osowski.de> 1.37.16-1
+- new package built with tito
+
 * Thu Jun 22 2017 Andreas C. Osowski <th0br0@mkdir.name> - 1.37.15-1
 * Updated version to 1.37.15
 
