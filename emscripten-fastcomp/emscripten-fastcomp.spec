@@ -34,9 +34,9 @@ Requires: %{name}%{?_isa} = %{version}-%{release}
 Development header files for emscripten-fastcomp clang+llvm.
 
 %prep
-%setup -q -n %{name}-clang-%{version} -D -b 1
-%setup -q -n %{name}-%{version} -b 0
-mv ../%{name}-clang-%{version} tools/clang
+%setup -q -n %{name}-%{version}/%{name}-clang-%{version} -D -b 1
+%setup -q -n %{name}-%{version}/%{name}-%{version} -b 0
+mv ../%{name}-%{version}/%{name}-clang-%{version} tools/clang
 
 %build
 mkdir -p _build
