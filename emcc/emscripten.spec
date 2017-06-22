@@ -7,8 +7,8 @@ License: NCSA
 URL: https://github.com/kripken/emscripten
 
 #https://github.com/kripken/emscripten/archive/1.37.2.tar.gz
-Source0: %{name}-%{version}.tar.gz
-Source100: em.sh
+Source0: %{name}-%{version}/%{name}-%{version}.tar.gz
+Source100: %{name}-%{version}/em.sh
 BuildArch: noarch
 
 Patch0: 0001-Check-for-LLVM-env-to-set-llvm_root-on-initial-start.patch

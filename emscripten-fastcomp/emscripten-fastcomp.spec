@@ -9,9 +9,9 @@ License: NCSA
 URL: https://github.com/kripken/emscripten-fastcomp
 
 #Source0: https://github.com/kripken/%{name}/archive/%{version}.tar.gz
-Source0: %{name}-%{version}.tar.gz
+Source0: %{name}-%{version}/%{name}-%{version}.tar.gz
 #Source1: https://github.com/kripken/%{name}-clang/archive/%{version}.tar.gz
-Source1: %{name}-clang-%{version}.tar.gz
+Source1: %{name}-%{version}/%{name}-clang-%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  zlib-devel
