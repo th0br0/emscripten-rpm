@@ -69,6 +69,9 @@ cp -va third_party -t %{buildroot}%{_datadir}/emscripten/
 %{_datadir}/emscripten/*
 
 %changelog
+* Thu Jun 22 2017 Andreas C. Osowski <andreas@osowski.de> 1.37.15-1
+- new package built with tito
+
 * Thu Jun 22 2017 Andreas C. Osowski <th0br0@mkdir.name> - 1.37.15-1
 - Updated version
 
