@@ -1,6 +1,6 @@
 Name: emscripten
-Version: 1.37.2
-Release: 4%{?dist}
+Version: 1.37.15
+Release: 1%{?dist}
 Summary: The emscripten compiler.
 
 License: NCSA
@@ -69,6 +69,9 @@ cp -va third_party -t %{buildroot}%{_datadir}/emscripten/
 %{_datadir}/emscripten/*
 
 %changelog
+* Thu Jun 22 2017 Andreas C. Osowski <th0br0@mkdir.name> - 1.37.15-1
+- Updated version
+
 * Thu Feb  2 2017 Hubert Figuiere <hub@figuiere.net> - 1.37.2-4
 - Added emmake, emconfigure, emscons, em-config.
 

@@ -1,8 +1,8 @@
 # We need to install it all in its own prefix.
 %define _prefix /usr/lib/emscripten
 Name: emscripten-fastcomp
-Version: 1.37.2
-Release: 2%{?dist}
+Version: 1.37.15
+Release: 1%{?dist}
 Summary: The clang+llvm backend for Emscripten
 
 License: NCSA
@@ -96,6 +96,9 @@ rm -vf %{buildroot}%{_datadir}/clang/clang-format-diff.py*
 
 
 %changelog
+* Thu Jun 22 2017 Andreas C. Osowski <th0br0@mkdir.name> - 1.37.15-1
+* Updated version to 1.37.15
+
 * Wed Feb  1 2017 Hubert Figuiere <hub@figuiere.net> - 1.37.2-2
 - Move %{_libdir}/clang/ to the -devel package.
 
